@@ -1,0 +1,14 @@
+[Unit]
+Description=3rick
+After=network.target
+
+[Service]
+User=str
+Group=str
+
+WorkingDirectory=/home/str/3rick/
+Environment="PYTHONPATH=/home/str/3rick/"
+ExecStart=/home/str/3rick/.venv/bin/python /home/str/3rick/bot_main.py
+
+[Install]
+WantedBy=multi-user.target
