@@ -514,4 +514,4 @@ if __name__ == '__main__':
             except:
                 ...
 
-    event_loop.run
+    event_loop.run_forever()
